@@ -151,7 +151,7 @@ function createTexCoordBuffer(frameName, atlasJson)
 
 function draw()
 {
-    gl.clear(gl.COLOR_BUFFER_BIT | gl.DEPTH_BUFFER_TEST);
+    gl.clear(gl.COLOR_BUFFER_BIT | gl.DEPTH_BUFFER_BIT);
     glMatrix.mat4.mul(projViewMatrix, projMatrix, viewMatrix);
 
     for (let r = 0; r < fieldHeight; ++r)
